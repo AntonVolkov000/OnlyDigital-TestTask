@@ -17,13 +17,6 @@ use backend\DatabaseController;
 
 $dbController = new DatabaseController($config);
 
-function printT($text): void
-{
-    echo '<pre>';
-    print_r($text);
-    echo '</pre>';
-}
-
 if (!$_POST['check-spam'] && $_POST['login'] != '') {
     $checkSuccess = true;
     $userPDO = $dbController->getUserPDOByLogin($_POST['login']);

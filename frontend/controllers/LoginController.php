@@ -19,15 +19,6 @@ $dbController = new DatabaseController($config);
 
 const WEEK = 60 * 60 * 24 * 7;
 
-function printT($text): void
-{
-    echo '<pre>';
-    print_r($text);
-    echo '</pre>';
-}
-
-printT($_POST);
-
 function check_captcha($token): bool
 {
     global $config;
