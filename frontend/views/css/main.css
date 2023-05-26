@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+form label {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.hidden-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    margin: 0;
+}
+
+.smart-captcha {
+    margin-bottom: 10px;
+}
+
+.link-redirect {
+    margin-top: 20px;
+}
